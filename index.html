@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>예약 안내</title>
+<title>강남 쩜오 하퍼 예약</title>
 
 <style>
 body {
@@ -15,49 +15,40 @@ body {
 }
 
 .wrap {
-    max-width: 520px;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 28px 16px 48px;
+    padding: 20px 14px 30px;
 }
 
+/* 제목 */
 h1 {
-    font-size: 32px;
-    margin: 0 0 14px;
-    line-height: 1.25;
+    font-size: 24px;
+    margin: 0 0 10px;
 }
 
-.sub {
-    font-size: 18px;
-    color: #e0e0e0;
-    line-height: 1.7;
-    margin-bottom: 18px;
+/* 핵심 문구 */
+.main {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
 }
 
 .highlight {
     color: #ffe100;
-    font-weight: 800;
-    font-size: 18px;
-    margin-bottom: 12px;
-    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 14px;
 }
 
-.mini-note {
-    color: #aaa;
-    font-size: 14px;
-    margin-bottom: 18px;
-}
-
+/* 버튼 */
 .btn {
     display: block;
     width: 100%;
-    max-width: 360px;
-    margin: 12px auto;
-    padding: 18px 16px;
+    margin: 8px 0;
+    padding: 14px;
     border-radius: 12px;
-    font-size: 19px;
-    font-weight: 800;
+    font-size: 17px;
+    font-weight: bold;
     text-decoration: none;
-    box-sizing: border-box;
 }
 
 .call {
@@ -65,163 +56,71 @@ h1 {
     color: #fff;
 }
 
-.chat {
+.kakao {
     background: #ffe100;
     color: #111;
 }
 
+/* 안내 */
 .notice {
-    color: #ffe100;
-    font-weight: 700;
-    margin: 14px 0 10px;
-    font-size: 16px;
+    font-size: 13px;
+    color: #bbb;
+    margin: 12px 0 16px;
 }
 
-.subnotice {
-    color: #ccc;
-    font-size: 14px;
-    margin-bottom: 22px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin-top: 10px;
-}
-
-.box {
-    padding: 18px 14px;
-    border: 1px solid #333;
-    border-radius: 14px;
-    text-align: left;
-    background: #111;
-    box-sizing: border-box;
-    min-height: 100%;
-}
-
-.box h2 {
-    text-align: center;
-    font-size: 22px;
-    margin: 0 0 14px;
-}
-
-.box p {
-    margin: 10px 0;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
+/* 링크 */
 .link-btn {
     display: block;
-    background: #1b1b1b;
+    background: #151515;
     border: 1px solid #333;
-    color: #00ffd0;
-    padding: 14px 12px;
-    margin: 10px 0;
+    color: #00e5c3;
+    padding: 12px;
+    margin: 6px 0;
     border-radius: 10px;
     text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    font-size: 17px;
-}
-
-.link-btn:active {
-    background: #252525;
-}
-
-@media (max-width: 420px) {
-    h1 {
-        font-size: 28px;
-    }
-
-    .sub {
-        font-size: 17px;
-    }
-
-    .highlight {
-        font-size: 17px;
-    }
-
-    .btn {
-        font-size: 18px;
-        padding: 16px 14px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    .box h2 {
-        font-size: 20px;
-    }
-
-    .box p,
-    .link-btn {
-        font-size: 16px;
-    }
+    font-size: 15px;
 }
 </style>
+
 </head>
+
 <body>
 
 <div class="wrap">
 
-    <h1>예약 안내</h1>
+<h1>예약 안내</h1>
 
-    <div class="sub">
-        대기 없이 바로 진행 가능합니다
-    </div>
+<div class="main">
+대기 없이 바로 진행 가능합니다
+</div>
 
-    <div class="highlight">
-        지금 연락주시면 빠르게 안내드립니다
-    </div>
+<div class="highlight">
+지금 연락주시면 빠르게 안내드립니다
+</div>
 
-    <div class="mini-note">
-        ※ 현재 대기 없이 바로 진행 가능합니다
-    </div>
+<a class="btn call" href="tel:01084782230">
+📞 010-8478-2230
+</a>
 
-    <a class="btn call" href="tel:01084782230">
-        📞 전화 문의 010-8478-2230
-    </a>
+<a class="btn kakao" href="https://open.kakao.com/o/gYwrGwoi">
+💬 카톡 문의 (빠른 연결)
+</a>
 
-    <a class="btn chat" href="https://open.kakao.com/o/gYwrGwoi">
-        💬 카톡 문의 (가장 빠른 연결)
-    </a>
+<div class="notice">
+※ 카톡 문의 시 우선 안내
+</div>
 
-    <div class="notice">
-        카톡 문의 시 우선 안내 가능합니다
-    </div>
+<a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230.html">
+👉 예약 방법
+</a>
 
-<p style="color:#ccc; font-size:14px;">
-✔ 현재 이용 고객 증가 중
-</p>
+<a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_4.html">
+👉 빠른 진행
+</a>
 
-    <div class="grid">
-        <div class="box">
-            <h2>예약 안내</h2>
-            <p>✔ 빠른 진행 가능</p>
-            <p>✔ 실시간 안내 가능</p>
-            <p>✔ 대기 없이 진행</p>
-            <p>✔ 처음 이용도 편하게 가능</p>
-        </div>
-
-        <div class="box">
-            <h2>상세 안내</h2>
-
-            <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230.html">
-                👉 예약 방법 바로 확인
-            </a>
-
-            <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_4.html">
-                👉 빠른 진행 방법 보기
-            </a>
-
-            <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_20.html">
-                👉 오늘 안내 내용 확인
-            </a>
-        </div>
-    </div>
+<a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_20.html">
+👉 오늘 정보
+</a>
 
 </div>
 
