@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>강남 예약 안내</title>
+<title>예약 안내</title>
 
 <style>
 body {
@@ -17,8 +17,7 @@ body {
 .wrap {
     max-width: 520px;
     margin: 0 auto;
-    padding: 28px 16px 50px;
-    box-sizing: border-box;
+    padding: 28px 16px 48px;
 }
 
 h1 {
@@ -31,15 +30,21 @@ h1 {
     font-size: 18px;
     color: #e0e0e0;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .highlight {
     color: #ffe100;
     font-weight: 800;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     line-height: 1.6;
+}
+
+.mini-note {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 18px;
 }
 
 .btn {
@@ -49,8 +54,8 @@ h1 {
     margin: 12px auto;
     padding: 18px 16px;
     border-radius: 12px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 19px;
+    font-weight: 800;
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -60,7 +65,7 @@ h1 {
     color: #fff;
 }
 
-.kakao {
+.chat {
     background: #ffe100;
     color: #111;
 }
@@ -68,8 +73,14 @@ h1 {
 .notice {
     color: #ffe100;
     font-weight: 700;
-    margin: 16px 0 22px;
+    margin: 14px 0 10px;
     font-size: 16px;
+}
+
+.subnotice {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 22px;
 }
 
 .grid {
@@ -151,40 +162,46 @@ h1 {
     }
 }
 </style>
-
 </head>
 <body>
 
 <div class="wrap">
 
-    <h1>강남 예약 안내</h1>
+    <h1>예약 안내</h1>
 
     <div class="sub">
-        빠른 입장 / 대기 없음<br>
-        오늘 바로 예약 가능합니다
+        대기 없이 바로 진행 가능합니다
     </div>
 
     <div class="highlight">
-        지금 연락주시면 바로 입장 가능합니다
+        지금 연락주시면 빠르게 안내드립니다
+    </div>
+
+    <div class="mini-note">
+        ※ 현재 대기 없이 바로 진행 가능합니다
     </div>
 
     <a class="btn call" href="tel:01084782230">
         📞 전화 문의 010-8478-2230
     </a>
 
-    <a class="btn kakao" href="https://open.kakao.com/o/gYwrGwoi">
-        💬 카톡 바로 문의 (빠른 응답)
+    <a class="btn chat" href="https://open.kakao.com/o/gYwrGwoi">
+        💬 카톡 문의 (가장 빠른 연결)
     </a>
 
     <div class="notice">
         카톡 문의 시 우선 안내 가능합니다
     </div>
 
+<p style="color:#ccc; font-size:14px;">
+✔ 현재 이용 고객 증가 중
+</p>
+
     <div class="grid">
         <div class="box">
             <h2>예약 안내</h2>
-            <p>✔ 빠른 입장 가능</p>
-            <p>✔ 실시간 라인업 안내</p>
+            <p>✔ 빠른 진행 가능</p>
+            <p>✔ 실시간 안내 가능</p>
             <p>✔ 대기 없이 진행</p>
             <p>✔ 처음 이용도 편하게 가능</p>
         </div>
@@ -193,15 +210,15 @@ h1 {
             <h2>상세 안내</h2>
 
             <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230.html">
-                예약 방법 확인
+                👉 예약 방법 바로 확인
             </a>
 
             <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_4.html">
-                빠른 입장 정보
+                👉 빠른 진행 방법 보기
             </a>
 
             <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_20.html">
-                라인업 확인
+                👉 오늘 안내 내용 확인
             </a>
         </div>
     </div>
