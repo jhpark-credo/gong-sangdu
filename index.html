@@ -17,40 +17,46 @@ body {
 .wrap {
     max-width: 520px;
     margin: 0 auto;
-    padding: 40px 20px 80px;
+    padding: 28px 16px 50px;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 32px;
+    margin: 0 0 14px;
+    line-height: 1.25;
 }
 
 .sub {
-    font-size: 16px;
-    color: #ccc;
-    margin-bottom: 25px;
+    font-size: 18px;
+    color: #e0e0e0;
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 .highlight {
-    color: yellow;
-    font-weight: bold;
-    margin-bottom: 25px;
+    color: #ffe100;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .btn {
     display: block;
     width: 100%;
-    max-width: 320px;
+    max-width: 360px;
     margin: 12px auto;
-    padding: 16px;
-    border-radius: 10px;
-    font-size: 18px;
+    padding: 18px 16px;
+    border-radius: 12px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .call {
-    background: #ff3b3b;
+    background: #ff4040;
     color: #fff;
 }
 
@@ -59,93 +65,146 @@ h1 {
     color: #111;
 }
 
+.notice {
+    color: #ffe100;
+    font-weight: 700;
+    margin: 16px 0 22px;
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 10px;
+}
+
 .box {
-    margin-top: 30px;
-    padding: 18px;
+    padding: 18px 14px;
     border: 1px solid #333;
-    border-radius: 12px;
+    border-radius: 14px;
     text-align: left;
     background: #111;
+    box-sizing: border-box;
+    min-height: 100%;
 }
 
 .box h2 {
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 12px;
+    font-size: 22px;
+    margin: 0 0 14px;
 }
 
 .box p {
-    margin: 8px 0;
-    font-size: 15px;
-    line-height: 1.6;
+    margin: 10px 0;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.link-btn {
+    display: block;
+    background: #1b1b1b;
+    border: 1px solid #333;
+    color: #00ffd0;
+    padding: 14px 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+}
+
+.link-btn:active {
+    background: #252525;
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .sub {
+        font-size: 17px;
+    }
+
+    .highlight {
+        font-size: 17px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 16px 14px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .box h2 {
+        font-size: 20px;
+    }
+
+    .box p,
+    .link-btn {
+        font-size: 16px;
+    }
 }
 </style>
 
 </head>
-
 <body>
 
 <div class="wrap">
 
-<h1>강남 예약 안내</h1>
+    <h1>강남 예약 안내</h1>
 
-<div class="sub">
-빠른 입장 / 대기 없음<br>
-오늘 바로 예약 가능합니다
-</div>
+    <div class="sub">
+        빠른 입장 / 대기 없음<br>
+        오늘 바로 예약 가능합니다
+    </div>
 
-<div class="highlight">
-지금 연락주시면 바로 입장 가능합니다
-</div>
+    <div class="highlight">
+        지금 연락주시면 바로 입장 가능합니다
+    </div>
 
-<!-- 전화 버튼 -->
-<a class="btn call" href="tel:01084782230">
-📞 전화 문의 010-8478-2230
-</a>
+    <a class="btn call" href="tel:01084782230">
+        📞 전화 문의 010-8478-2230
+    </a>
 
-<!-- 카카오톡 버튼 -->
-<a class="btn kakao" href="https://open.kakao.com/o/gYwrGwoi">
-💬 카톡 바로 문의 (빠른 응답)
-</a>
+    <a class="btn kakao" href="https://open.kakao.com/o/gYwrGwoi">
+        💬 카톡 바로 문의 (빠른 응답)
+    </a>
 
-<p style="color:yellow;">
-카톡 문의 시 우선 안내 가능합니다
-</p>
+    <div class="notice">
+        카톡 문의 시 우선 안내 가능합니다
+    </div>
 
-<!-- 안내 박스 -->
-<div class="box">
-<h2>예약 안내</h2>
+    <div class="grid">
+        <div class="box">
+            <h2>예약 안내</h2>
+            <p>✔ 빠른 입장 가능</p>
+            <p>✔ 실시간 라인업 안내</p>
+            <p>✔ 대기 없이 진행</p>
+            <p>✔ 처음 이용도 편하게 가능</p>
+        </div>
 
-<p>✔ 빠른 입장 가능</p>
-<p>✔ 실시간 라인업 안내</p>
-<p>✔ 대기 없이 진행</p>
-<p>✔ 처음 이용도 편하게 가능</p>
+        <div class="box">
+            <h2>상세 안내</h2>
 
-</div>
+            <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230.html">
+                예약 방법 확인
+            </a>
 
-<!-- 블로그 연결 -->
-<div class="box">
-<h2>상세 안내</h2>
+            <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_4.html">
+                빠른 입장 정보
+            </a>
 
-<p>
-<a href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230.html">
-예약 방법 확인
-</a>
-</p>
-
-<p>
-<a href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_4.html">
-빠른 입장 정보
-</a>
-</p>
-
-<p>
-<a href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_20.html">
-라인업 확인
-</a>
-</p>
-
-</div>
+            <a class="link-btn" href="https://gangnam-room-booking.blogspot.com/2026/04/o1o-5590-2230_20.html">
+                라인업 확인
+            </a>
+        </div>
+    </div>
 
 </div>
 
